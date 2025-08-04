@@ -52,9 +52,7 @@ Gerencia uma conta com saldo e métodos para exibir e zerar o valor.
 Praticado: manipulação de valores, método void e lógica de atualização.
 
 ✅ Exemplo de saída (ZeraSaldo)
-bash
-Copiar
-Editar
+
 Saldo: 1579.42
 Saldo zerado: 0.0
 Saldo: 0.0
