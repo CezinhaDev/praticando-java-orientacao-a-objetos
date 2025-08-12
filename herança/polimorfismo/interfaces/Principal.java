@@ -5,12 +5,14 @@ public class Principal {
         // Criação de objetos e utilização das interfaces
 
         // Exemplo de uso da classe Funcionario
-        Gerente gerente = new Gerente("Carlos", 5000);
+        Funcionario gerente = new Gerente("Carlos", 5000);
         gerente.exibirDetalhes();
         gerente.reajusteDeSalario(2);
-        gerente.setBonus(1000);
+        ((Gerente)gerente).setBonus(1000); // Cast para acessar método específico do Gerente que no caso é setBonus isso se chama downcasting
 
-        Desenvolvedor desenvolvedor = new Desenvolvedor("Ana", 4000, "Java");
+
+        Funcionario desenvolvedor = new Desenvolvedor("Ana", 4000, "Java");
+        desenvolvedor.reajusteSalario();
         desenvolvedor.exibirDetalhes();
     }
 }

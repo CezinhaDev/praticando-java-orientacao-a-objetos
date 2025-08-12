@@ -8,4 +8,9 @@ public class Desenvolvedor extends Funcionario{
         super(nome, salario); //super chama o construtor da classe pai Funcionario
         this.stack = stack;
     }
+
+    @Override
+    public void exibirDetalhes() {
+    System.out.println("\nDetalhes do Desenvolvedor: " + nome + " - Salário: " + salario + " - Stack: " + stack);
+    }
 }

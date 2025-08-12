@@ -16,5 +16,9 @@ public class Gerente extends Funcionario { // Herenca do funcionario
         this.bonus = bonus;
     }
 
-    
+    @Override // Anotação que indica que estamos sobrescrevendo um método da classe pai
+    public void exibirDetalhes() {
+        // Chama o método exibirDetalhes da classe pai
+    System.out.printf("\nDetalhes do Gerente: %s - Salário: %.2f - Bônus: %.2f%n", nome, salario, bonus);
+    }
 }

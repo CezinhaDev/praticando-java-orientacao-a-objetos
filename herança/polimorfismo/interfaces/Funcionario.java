@@ -2,8 +2,8 @@ package herança.polimorfismo.interfaces;
 
 public class Funcionario {
     // Atributos da classe Funcionario
-    private String nome;
-    private double salario;
+    protected String nome;
+    protected double salario;
     
     // Construtor
     public Funcionario(String nome, double salario) {
@@ -21,8 +21,12 @@ public class Funcionario {
     // Método para reajustar o salário
     public void reajusteDeSalario(double percentual){
         salario += salario * percentual / 100;
-        System.out.println("Novo salário após reajuste de " + percentual + "%: " + nome + ", " + salario);
+        System.out.println("\nNovo salário após reajuste de " + percentual + "%: " + nome + ", " + salario);
     }
 
+    public void reajusteSalario(){
+        salario += 500;
+        System.out.println("\nsalário  " + nome + ", " + salario);
+    }
 
 }
