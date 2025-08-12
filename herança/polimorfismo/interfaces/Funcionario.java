@@ -15,6 +15,7 @@ public class Funcionario {
     public void exibirDetalhes() {
         System.out.println("Nome: " + nome);
         System.out.println("Salário: " + salario);
+        System.out.println("-----------------------");
     }
 
     // Método para reajustar o salário

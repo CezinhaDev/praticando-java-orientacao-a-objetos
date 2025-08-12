@@ -8,5 +8,13 @@ public class Gerente extends Funcionario { // Herenca do funcionario
         super(nome, salario); // Chama o construtor da classe Funcionario, super é usado para referenciar a classe pai que é Funcionario
     }
 
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }
+
     
 }
