@@ -21,4 +21,9 @@ public class Gerente extends Funcionario { // Herenca do funcionario
         // Chama o método exibirDetalhes da classe pai
     System.out.printf("\nDetalhes do Gerente: %s - Salário: %.2f - Bônus: %.2f%n", nome, salario, bonus);
     }
+
+    @Override
+    public void calculaPLR() {
+        System.out.println("Cálculo da PLR do Gerente " + nome);
+    }
 }

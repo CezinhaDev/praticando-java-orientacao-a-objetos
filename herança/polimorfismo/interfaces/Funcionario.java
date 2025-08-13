@@ -1,6 +1,6 @@
 package herança.polimorfismo.interfaces;
 
-public class Funcionario {
+public  abstract class Funcionario {
     // Atributos da classe Funcionario
     protected String nome;
     protected double salario;
@@ -28,5 +28,7 @@ public class Funcionario {
         salario += 500;
         System.out.println("\nsalário  " + nome + ", " + salario);
     }
+
+    public abstract void calculaPLR(); // Método abstrato para calcular PLR (Participação nos Lucros e Resultados)
 
 }
