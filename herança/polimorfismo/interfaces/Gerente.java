@@ -1,6 +1,6 @@
 package herança.polimorfismo.interfaces;
 
-public class Gerente extends Funcionario { // Herenca do funcionario
+public class Gerente extends Funcionario implements Aprovador { // Herenca do funcionario
 
     private double bonus; // Atributo específico do Gerente
     
@@ -15,6 +15,12 @@ public class Gerente extends Funcionario { // Herenca do funcionario
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
+
+    @Override
+    public void aprovarProjeto(String nomeProjeto) {
+        System.out.println("Gerente " + nome + " aprovou o projeto: " + nomeProjeto);
+    }
+    
 
     @Override // Anotação que indica que estamos sobrescrevendo um método da classe pai
     public void exibirDetalhes() {

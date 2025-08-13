@@ -31,4 +31,6 @@ public  abstract class Funcionario {
 
     public abstract void calculaPLR(); // Método abstrato para calcular PLR (Participação nos Lucros e Resultados)
 
+    protected abstract void aprovarProjeto(String string);
+
 }
