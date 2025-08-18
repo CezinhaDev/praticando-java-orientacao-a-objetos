@@ -18,4 +18,10 @@ public class Desenvolvedor extends Funcionario{
     public void calculaPLR() {
        System.out.println("Cálculo da PLR do Desenvolvedor " + nome);
     }
+
+    @Override
+    protected void aprovarProjeto(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'aprovarProjeto'");
+    }
 }
